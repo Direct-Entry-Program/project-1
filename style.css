@@ -1,0 +1,181 @@
+@import url(/CSS/reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.clear-fix {
+    clear: both;/*  */
+}
+
+
+/* Typography */
+
+h1 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+h4 {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+h5 {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+
+}
+
+h6 {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+}
+
+
+/* Layout */
+
+:root {
+    --header-height:50px;
+    --nav-width:150px;
+    --border-color:lightgrey;
+}
+
+#header {
+    background-color: rgb(255, 255, 255,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    border-bottom: 1px solid var(--border-color);
+
+}
+
+#nav {
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    bottom: 0;
+    width: var(--nav-width);
+    border-right: 1px solid var(--border-color);
+
+}
+
+#main {
+
+
+    margin-left: var(--nav-width);
+    margin-top: var(--header-height);
+
+
+}
+
+#footer {
+    text-align: center;
+    padding: 10px 10px 15px 10px;
+    border-top: 1px solid var(--border-color);
+}
+
+#logo{
+    padding-left: 10px;
+}
+
+#social-media-icons-container {
+    float: right;
+    height: var(--header-height);
+    padding-right: 10px;
+}
+
+#social-media-icons-container .smi-icons {
+    float: left;
+    height: 100%;
+    width: 50px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 15px 15px;
+    cursor: pointer;
+    transition: background-color ,width;
+    transition-duration: 600ms ,300ms;
+    
+}
+
+#social-media-icons-container .smi-icons:nth-child(1):hover {
+    background-color: #3b5998;
+
+}
+
+#social-media-icons-container .smi-icons:nth-child(2):hover {
+    background-color: #0e76a8;
+
+}
+
+#social-media-icons-container .smi-icons:nth-child(3):hover {
+    background-color: #00acee;
+
+}
+
+#social-media-icons-container .smi-icons:nth-child(4):hover {
+    background-color: #3f729b;
+
+}
+
+#social-media-icons-container .smi-icons:nth-child(5):hover {
+    background-color: #c4302b;
+
+}
+
+#social-media-icons-container .smi-icons:nth-child(6):hover {
+    background-color: #444;
+
+}
+
+#social-media-icons-container .smi-icons:nth-child(7):hover {
+    background-color: #6567a5;
+
+}
+
+
+
+#social-media-icons-container .smi-icons:not(.smi-icons:last-child) {
+    border-right: 1px solid var(--border-color);
+}
+
+
+#social-media-icons-container .smi-icons ion-icon {
+    padding-right: 15px;
+    vertical-align: sub;
+    font-size: 1.3rem;
+    color: #666;
+} 
+
+#social-media-icons-container .smi-icons:hover ion-icon{
+
+    color: rgb(255, 255, 255);
+}
+
+#social-media-icons-container .smi-icons:hover{
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    width: 130px;
+}
+
