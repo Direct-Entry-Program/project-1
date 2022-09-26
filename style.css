@@ -179,3 +179,38 @@ h6 {
     width: 130px;
 }
 
+
+
+/* Navigation */
+
+.sub-menu {
+    display: none;
+}
+
+#nav ul li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    
+}
+
+
+#nav ul li span {
+    /* transition: margin-left 0.4s cubic-bezier(0.71, 0.33, 0.19, 1.98); */
+    transition-property: margin-left;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.71, 0.33, 0.19, 1.98);
+}
+
+#nav ul li:hover {
+    border-bottom: 3px solid red;
+}
+
+#nav ul li:hover>span {
+    background-color: #d3d3d3d3;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
